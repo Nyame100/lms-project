@@ -15,6 +15,7 @@ const HomePage = () => {
       {/* Navbar div -- slightly different from general navbar*/}
       <div className="h-[80px] md:pl-0 fixed inset-y-0 w-full z-50">
         <div className="p-4 border-b h-full flex items-center bg-white shadow-sm">
+          {/* Remove NavbarRoutes and input your own routes to signup or signin */}
           <NavbarRoutes />
         </div>
       </div>
