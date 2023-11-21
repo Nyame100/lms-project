@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import Navbar from "./(dashboard)/_components/navbar";
 import { Sidebar } from "lucide-react";
 import NavbarRoutes from "@/components/navbar-routes";
+import HomeNavRoutes from "@/components/homepage-nav-routes";
 
 const HomePage = () => {
   const router = useRouter();
@@ -16,7 +17,8 @@ const HomePage = () => {
       <div className="h-[80px] md:pl-0 fixed inset-y-0 w-full z-50">
         <div className="p-4 border-b h-full flex items-center bg-white shadow-sm">
           {/* Remove NavbarRoutes and input your own routes to signup or signin */}
-          <NavbarRoutes />
+          {/* <NavbarRoutes /> */}
+          <HomeNavRoutes />
         </div>
       </div>
       {/* Sidebar div */}
