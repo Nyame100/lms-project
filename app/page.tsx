@@ -68,7 +68,7 @@ const HomePage = async () => {
             <HomeNavRoutes />
           </div>
           {categories.length > 0 && (
-            <div className="p-6 md:pl-10">
+            <div className="p-6 md:pl-56">
               <Categories items={categories} />
             </div>
           )}
