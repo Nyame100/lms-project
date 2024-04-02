@@ -11,7 +11,7 @@ interface HomePageCoursesListProps {
 
 const HomePageCoursesList = ({ items }: HomePageCoursesListProps) => {
   return (
-    <div className="md:pl-56">
+    <div className="w-[80%] mr-auto ml-auto px-2.5 md:px-10">
       <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4">
         {items.map((item) => (
           <HomePageCourseCard

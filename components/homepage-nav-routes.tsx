@@ -19,7 +19,7 @@ const HomeNavRoutes = () => {
       <div className="flex gap-x-2 ml-auto">
         {!isSignedIn ? (
           <Link href="/dashboard">
-            <Button size="sm" variant="ghost">
+            <Button size="sm" variant="ghost" className="max-[640px]:text-xs">
               <User className="h-4 w-4 mr-2" />
               Sign in
             </Button>

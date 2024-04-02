@@ -62,13 +62,12 @@ const HomePage = async () => {
   return (
     <>
       <div className="h-full">
-        {/* Navbar div -- slightly different from general navbar*/}
-        <div className="h-[80px] md:pl-0 fixed inset-y-0 w-full z-50">
-          <div className="p-4 border-b h-full flex items-center bg-white shadow-sm">
+        <div className="h-[80px] md:pl-0 fixed inset-y-0 w-full z-50 mx-auto px-2.5 md:px-20 box-border">
+          <div className="p-4 border-b h-full w-[80%] ml-auto mr-auto flex items-center shadow-sm">
             <HomeNavRoutes />
           </div>
           {categories.length > 0 && (
-            <div className="p-6 md:pl-56">
+            <div className="p-6 w-[80%] mr-auto ml-auto px-2.5 md:px-10">
               <Categories items={categories} />
             </div>
           )}
@@ -80,3 +79,20 @@ const HomePage = async () => {
 };
 
 export default HomePage;
+
+// mx-auto w-full max-w-screen-xl px-2.5 md:px-20
+{
+  /* <div className="h-full">
+        <div className="h-[80px] md:pl-0 fixed inset-y-0 w-[80%] inset-x-0 z-50 mx-auto px-2.5 md:px-20 box-border border-8 border-red-600">
+          <div className="p-4 border-b h-full w-[80%] ml-auto mr-auto flex items-center shadow-sm">
+            <HomeNavRoutes />
+          </div>
+          {categories.length > 0 && (
+            <div className="p-6 md:pl-56">
+              <Categories items={categories} />
+            </div>
+          )}
+          <HomePageCoursesList items={courses} />
+        </div>
+      </div> */
+}
