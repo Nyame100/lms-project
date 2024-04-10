@@ -62,13 +62,17 @@ const HomePage = async () => {
   return (
     <>
       <div className="h-full">
-        <div className="h-[80px] md:pl-0 fixed inset-y-0 w-full z-50 mx-auto px-2.5 md:px-20 box-border">
+        <div className="h-[80px] fixed inset-y-0 w-full z-50 mx-auto px-2.5 md:px-20 box-border">
           <div className="p-4 border-b h-full w-[80%] ml-auto mr-auto flex items-center shadow-sm">
             <HomeNavRoutes />
           </div>
           {categories.length > 0 && (
-            <div className="p-6 w-[80%] mr-auto ml-auto px-2.5 md:px-10">
-              <Categories items={categories} />
+            <div className="p-6 w-[80%] mr-auto ml-auto px-2.5 md:px-10 text-sm">
+              Browse through our vast array of courses.&nbsp;
+              <span className=" text-blue-500 text-sm text-muted-foreground">
+                Sign-up now to get free access to course introduction.
+              </span>
+              {/* <Categories items={categories} /> */}
             </div>
           )}
           <HomePageCoursesList items={courses} />

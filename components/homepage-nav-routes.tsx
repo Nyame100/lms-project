@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { LogOut, User } from "lucide-react";
 import Link from "next/link";
 import { SearchInput } from "./search-input";
+import Logo from "@/app/(dashboard)/_components/logo";
 
 const HomeNavRoutes = () => {
   const { isSignedIn } = useUser();
@@ -14,7 +15,9 @@ const HomeNavRoutes = () => {
   return (
     <>
       <div className="md:block md:mb-0 sm:px-6 sm:pt-6 sm:block">
-        <SearchInput />
+        <div className="p-6">
+          <Logo />
+        </div>
       </div>
       <div className="flex gap-x-2 ml-auto">
         {!isSignedIn ? (
